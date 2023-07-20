@@ -76,3 +76,54 @@ let maleNames=names=[1];
 
 console.log(maleNames, typeof maleNames);
 
+//Declare an arrays of objects
+
+let userArray= [
+    {
+        name:"Antonio",
+        age:25,
+        email:"gvazquez10@uabc.edu.mx"
+    },
+    {   name:"Alejandro",
+        age:25,
+        email:"elalejandro@uabc.edu.mx"
+    }
+];
+
+
+console.log(userArray[0].name);
+console.log(userArray[1].name);
+
+userArray[2]={
+    name:"Luis",
+    age:26,
+    email:"luislosoya@uabc.edu.mx"
+};
+
+console.log(userArray[2].name);
+
+console.log("Longitud del arreglo:", userArray.length);
+
+console.log (userArray instanceof Array);
+console.log (userArray instanceof Object);
+
+//Methods of array
+let namesM = ["Olivia", "Emma", "Mateo", "Samuel"];
+
+console.log("Longitud del arreglo:",namesM.length);
+console.log("Index of [Emma]: ", namesM.indexOf("Emma"));
+
+namesM.push("Antonio");
+console.log(namesM);
+
+namesM.unshift("Alejandro");
+console.log(namesM);
+
+namesM.pop();
+console.log(namesM);
+
+namesM.shift();
+console.log(namesM);
+
+namesM.reverse();
+console.log(namesM);
